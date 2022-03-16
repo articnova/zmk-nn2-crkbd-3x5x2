@@ -81,14 +81,14 @@
 
                 nav_layer {
 // -----------------------------------------------------------------------------------------
-// | BOOTLOADER |    |    |    |    |   |  PSCRN  |  PG_UP  |  UP    |  PG_DN  |  BSPC  |
-// |            |    |    |    |    |   |         |  LEFT   |  DOWN  |  RIGHT  |  ENTER |
-// |            |    |    |    |    |   |         |         |        |         |  BOOTLOADER |
+// | RESET |    |    |    |    |   |  PSCRN  |  PG_UP  |  UP    |  PG_DN  |  BSPC  |
+// |       |    |    |    |    |   |         |  LEFT   |  DOWN  |  RIGHT  |  ENTER |
+// |       |    |    |    |    |   |         |         |        |         |  RESET |
 //                        | DEF|    |   |         |         |
                         bindings = <
-   &none &bootloader  &none   &none   &none   &none     &kp PSCRN   &kp PG_UP  &kp UP    &kp PG_DN  &kp BSPC    &none
-   &none &none        &none   &none   &none   &none     &none       &kp LEFT   &kp DOWN  &kp RIGHT  &kp ENTER   &none
-   &none &none        &none   &none   &none   &none     &none       &none      &none     &none      &bootloader &none
+   &none &reset  &none   &none   &none   &none     &kp PSCRN   &kp PG_UP  &kp UP    &kp PG_DN  &kp BSPC    &none
+   &none &none   &none   &none   &none   &none     &none       &kp LEFT   &kp DOWN  &kp RIGHT  &kp ENTER   &none
+   &none &none   &none   &none   &none   &none     &none       &none      &none     &none      &reset      &none
                     	      &none   &to DEF &none     &none       &none      &none
                         >;
                 };
