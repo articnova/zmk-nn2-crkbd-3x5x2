@@ -95,12 +95,12 @@
 
                 mod_layer {
 // -----------------------------------------------------------------------------------------
-// | TAB     |  ALT     |  CTRL     |  DEL       |    |   |   |   |   | K_SLEEP  | C_SLEEP  |
+// | TAB     |  ALT     |  CTRL     |  DEL       |    |   |   |   |   | K_POWER  | C_POWER  |
 // | SK LGUI |  SK ALT  |  SK SHFT  |  SK LCTRL  |    |   |   |   |   |          |          |
 // |         |          |           |            |    |   |   |   |   |          |          |
 //                      |           |            |    |   |   |
                         bindings = <
-   &none &kp TAB   &kp LALT   &kp LCTRL   &kp DEL     &trans    &trans  &trans  &trans  &kp K_SLEEP  &kp C_SLEEP &none
+   &none &kp TAB   &kp LALT   &kp LCTRL   &kp DEL     &trans    &trans  &trans  &trans  &kp K_POWER  &kp C_POWER &none
    &none &sk LGUI  &sk LALT   &sk LSHFT   &sk LCTRL   &trans    &trans  &trans  &trans  &trans       &trans      &none
    &none &trans    &trans     &trans      &trans      &trans    &trans  &trans  &trans  &trans       &trans      &none
                     	      &none       &trans      &trans    &trans  &trans  &none
