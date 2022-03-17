@@ -46,7 +46,7 @@
 //                   | MOD | BKSP|   | SPC | SYMNAV |
                         bindings = <
    &none &kp Q      &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P       &none
-   &none &kp A      &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp ENTER   &none 
+   &none &kp A      &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &mt LALT ENTER   &none 
    &none &Z_OSLSYM  &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp LSHIFT  &none
                           &none &mo MOD &kp BSPC   &kp SPACE &ly NAV SYM &none
                         >;
