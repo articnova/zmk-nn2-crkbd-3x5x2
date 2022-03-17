@@ -21,7 +21,7 @@
                         label = "TAP_DANCE_OSLSYM";            
                         #binding-cells = <0>;            
                         tapping-term-ms = <200>;            
-                        bindings = <&kp Z>, <&sl SYM>;        
+                        bindings = <&kp Z>, <&slm SYM>;        
                 };    
 
                 ly: layers {
@@ -33,6 +33,15 @@
                         flavor = "tap-preferred";
                         bindings = <&mo>, <&to>;
                 };
+
+                slm: behavior_sticky_layer {
+			compatible = "zmk,behavior-sticky-key";
+			label = "STICKY_LAYER";
+			#binding-cells = <1>;
+			release-after-ms = <1000>;
+			bindings = <&mo>;
+			ignore-modifiers;
+		};
         };
 
         keymap {
@@ -51,6 +60,7 @@
                           &none &mo MOD &kp BSPC   &kp SPACE &ly NAV SYM &none
                         >;
                 };
+
                 symbol_layer {
 // -----------------------------------------------------------------------------------------
 // | ESC |  `  |  ;  |  /  |  ?  |   |  {  |  }  |  &  |  *  |  #  |
@@ -60,7 +70,7 @@
                         bindings = <
    &none &kp ESC      &kp GRAVE  &kp SEMI   &kp FSLH   &kp QMARK   &kp LBRC   &kp RBRC   &kp AMPS   &kp STAR    &kp NON_US_HASH   &none
    &none &kp TAB      &kp MINUS  &kp UNDER  &kp EQUAL  &kp PLUS    &kp LBKT   &kp RBKT   &kp DOLLAR &kp PERCENT &kp CARET         &none
-   &none &sk LSHIFT   &kp APOS   &kp DQT    &kp EXCL   &kp BSLH    &kp LPAR   &kp RPAR   &kp PIPE   &kp AT      &kp LS(N3)        &none
+   &none &kp LSHIFT   &kp APOS   &kp DQT    &kp EXCL   &kp BSLH    &kp LPAR   &kp RPAR   &kp PIPE   &kp AT      &kp LS(N3)        &none
                           	 &none      &to DEF    &kp DEL     &kp SPACE  &to NUM    &none
                         >;
                 };
