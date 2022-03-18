@@ -70,7 +70,7 @@
                         bindings = <
    &none &kp ESC      &kp GRAVE  &kp SEMI   &kp FSLH   &kp QMARK        &kp LBRC   &kp RBRC   &kp AMPS              &kp STAR    &kp NON_US_HASH   &none
    &none &kp TAB      &kp MINUS  &kp UNDER  &kp EQUAL  &kp PLUS         &kp LBKT   &kp RBKT   &kp DOLLAR            &kp PERCENT &kp CARET         &none
-   &none &kp LSHIFT   &kp LS(N2) &kp DQT    &kp EXCL   &kp NON_US_BSLH  &kp LPAR   &kp RPAR   &kp LS(NON_US_BSLH)   &kp APOS    &kp LS(N3)        &none
+   &none &kp LSHIFT   &kp APOS   &kp LS(N2) &kp EXCL   &kp NON_US_BSLH  &kp LPAR   &kp RPAR   &kp LS(NON_US_BSLH)   &kp DQT    &kp LS(N3)        &none
                           	 &none      &to DEF    &kp DEL          &kp SPACE  &to NUM    &none
                         >;
                 };
